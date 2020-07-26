@@ -11,13 +11,13 @@ function calculateGrade(rightNumber, totalNumber) {
             case percentGrade >= 50 && percentGrade < 60:
                 grade = 'E';
                 break;
-            case percentGrade >= 60 && percentGrade < 69:
+            case percentGrade >= 60 && percentGrade < 70:
                 grade = 'D';
                 break;
-            case percentGrade >= 70 && percentGrade < 79:
+            case percentGrade >= 70 && percentGrade < 80:
                 grade = 'C';
                 break;
-            case percentGrade >= 80 && percentGrade < 89:
+            case percentGrade >= 80 && percentGrade < 90:
                 grade = 'B';
                 break;
             case percentGrade >= 90 && percentGrade <= 100:
