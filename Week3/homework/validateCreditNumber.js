@@ -7,7 +7,7 @@ function validateCreditNumber(num) {
         let flagTwoDifferent = false;
         let flagIsNumbers = true;
         for (let i=0; i<16; i++) {
-            if (!parseInt(numString[i])) {
+            if (!parseInt(numString[i]) && numString[i] !== '0') {
                 result.push('should contain only numbers');
                 flagIsNumbers = false;
                 break; 
@@ -34,6 +34,8 @@ function validateCreditNumber(num) {
 console.log(validateCreditNumber('a92332119c011113'));
 console.log(validateCreditNumber('4444444444444444'));
 console.log(validateCreditNumber('6666666666661666'));
+console.log(validateCreditNumber('0666666666661666'));
 console.log(validateCreditNumber(5555566666661666));
 console.log(validateCreditNumber('6666666661666'));
-
+console.log(validateCreditNumber('0000000000000014'));
+console.log(validateCreditNumber('0666666666661660'));
